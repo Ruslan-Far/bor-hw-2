@@ -8,12 +8,12 @@ from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
 
 ev3 = EV3Brick()
-speed = 20
+speed = 200
 angle = 90
 
 motor_a = Motor(Port.A)
 motor_b = Motor(Port.B, Direction.COUNTERCLOCKWISE, [8, 40])
-motor_c = Motor(Port.C, Direction.COUNTERCLOCKWISE, [12, 36])
+motor_c = Motor(Port.C, Direction.COUNTERCLOCKWISE, [12, 42])
 
 def return_to_start_pos_motor_a():
 	motor_a.run_until_stalled(100, Stop.COAST, 50)
